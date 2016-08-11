@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
     OnTabItemSelectListener listener = new OnTabItemSelectListener() {
         @Override
         public void onSelected(int index, Object tag) {
-            Log.i("asd", "onSelected:" + index + "   TAG: " + tag.toString());
+            Log.i("asdf", "onSelected:" + index + "   TAG: " + tag.toString());
             if (mViewPager != null && index < mViewPager.getAdapter().getCount()) {
                 mViewPager.setCurrentItem(index, false);
                 int counts = mFragments.size();
