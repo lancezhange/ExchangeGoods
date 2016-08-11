@@ -2,7 +2,6 @@ package com.hackathon.exchange.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,11 +18,20 @@ import com.hackathon.exchange.R;
  * Modifier：
  * Modify time：
  */
-public class PublishFragment extends Fragment {
+public class PublishFragment extends HomeBaseFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View mView = inflater.inflate(R.layout.fragment_publish, container, false);
         return mView;
+    }
+
+    @Override
+    public void OnFragmentSelectedChanged(boolean isSelected) {
+        if (isViewInitFinished()) {
+            if (isSelected) {
+
+            }
+        }
     }
 }
